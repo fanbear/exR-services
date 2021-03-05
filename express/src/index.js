@@ -10,7 +10,7 @@ const connect = require('./dataBase/connect');
 
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // DataBase connect
 mongoose.connect(connect.URI, {useNewUrlParser: true, useUnifiedTopology: true})
