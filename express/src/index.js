@@ -12,7 +12,6 @@ const connect = require('./dataBase/connect');
 const app = express();
 const port = 3000;
 
-console.log(connect.URI);
 // DataBase connect
 mongoose.connect(connect.URI, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(() =>  console.log("MongoDB connected"))
@@ -23,7 +22,7 @@ mongoose.connect(connect.URI, {useNewUrlParser: true, useUnifiedTopology: true})
 const Routes = require('./routes/index');
 
 // Used module
-app.use(Routes);
+
 app.use(express.static(path.join(__dirname, '/public')));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json({
@@ -33,6 +32,9 @@ app.use(express.json({
     type: 'application/json',
     verify: undefined
 }));
+
+// Used routes
+app.use(Routes);
 
 
 // Server
