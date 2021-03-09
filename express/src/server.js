@@ -10,7 +10,7 @@ const connect = require('./dataBase/connect');
 
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 5000;
 
 // DataBase connect
 mongoose.connect(connect.URI, {useNewUrlParser: true, useUnifiedTopology: true})
@@ -32,6 +32,12 @@ app.use(express.json({
     type: 'application/json',
     verify: undefined
 }));
+//api from react
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 // Used routes
 app.use(Routes);

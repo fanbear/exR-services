@@ -4,6 +4,7 @@ const Router = require('express');
 const ProductController = require('../controller/product');
 const CategoryController = require('../controller/category');
 const TableController = require('../controller/table');
+const OrderController = require('../controller/order');
 
 const route = Router();
 
@@ -28,5 +29,10 @@ route.get('/api/table', TableController.get);
 route.post('/api/table/create', TableController.create);
 route.delete('api/table/:id', TableController.delete);
 route.put('api/table/:id', TableController.update);
+
+//order
+// route.get('/api/order', TableController.get);
+route.post('/api/order/form', OrderController.create);
+// route.delete('api/order/:id', TableController.delete);
 
 module.exports = route;

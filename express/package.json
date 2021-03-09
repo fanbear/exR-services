@@ -4,8 +4,8 @@
   "description": "exR-services MERN ",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index",
-    "dev": "nodemon --ignore public/ src/index",
+    "start": "node src/server",
+    "dev": "nodemon --ignore public/ src/server",
     "babel-build": "babel src/ -d dist",
     "babel-start": "npm run dev",
     "build-start": "npm run babel-build && npm run babel-start"

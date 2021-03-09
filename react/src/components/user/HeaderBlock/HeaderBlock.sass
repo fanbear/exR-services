@@ -1,0 +1,153 @@
+.header-line
+    background: #2d394b
+.heade-wrapper
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: space-between
+.header-wrapper__item
+    &:nth-child(1)
+        flex: 0 0 30px
+    &:nth-child(2)
+        flex: 0 0 260px
+    &:nth-child(3)
+        flex: 0 0 80%
+        display: flex
+        justify-content: space-between
+        align-items: center          
+.logotype-wrapper
+    .logotype
+        font-size: 40px
+        color: white
+        padding: 0 10px
+        svg
+            color: #00a3ff
+.header-title
+    flex: 1 1 calc(15% - 20px)
+    margin: 0 10px
+    p
+        &:nth-child(1)
+            font-size: 28px
+            color: #00a3ff
+        &:nth-child(2)
+            font-size: 12px
+            color: #e0dfdf
+.phone-wrapper
+    position: relative
+    flex: 1 1 calc(25% - 20px)
+    margin: 0 10px
+    .phone-wrapper__arrow
+        padding-left: 10px
+    .phone-wrapper__item
+        position: absolute
+        z-index: 100;
+        width: 100%
+        top: -10px
+        padding-bottom: 10px
+        border-radius: 3px
+    span
+        a
+            color: #e0dfdf
+            font-size: 20px
+    p
+        margin-top: 10px
+        font-size: 12px
+    .phone-wrapper__title
+        margin-bottom: 20px
+        span
+            &:nth-child(1)
+                display: none
+                svg
+                    color: #bdbaba
+                    margin-right: 20px
+                    font-size: 24px
+            &:nth-child(2)
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                justify-content: center
+                p
+                    display: none
+    .phone-wrapper__dropdown
+        display: none
+        span
+            &:nth-child(1)
+                svg
+                    color: #bdbaba
+                    margin-right: 20px
+                    font-size: 24px
+            &:nth-child(2)
+                display: flex
+                flex-direction: column
+    &:hover
+        .phone-wrapper__arrow
+            display: none
+        .phone-wrapper__item
+            background: #f1fafe
+            padding: 20px 0
+            box-shadow: 0 4px 16px rgba(56, 71, 93, .40)
+            border-radius: 3px
+            transition: .3s
+            span
+                &:nth-child(1)
+                    display: flex
+                &:nth-child(2)
+                    p
+                        display: block
+        .phone-wrapper__dropdown
+            display: flex
+        p
+            color: #2d394b
+        span
+            a
+                color: #2d394b
+                &:hover
+                    color: #f3683e
+.address-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    flex: 1 1 calc(45% - 20px)
+    margin: 0 10px
+
+    .address-title
+        font-size: 14px
+
+    .item-address
+        display: flex
+        width: 100%
+        justify-content: space-evenly
+        .address-title
+            font-size: 14px
+            padding: 0 10px
+            &:nth-child(1)
+                display: flex
+                align-items: center
+                span
+                    margin-right: 5px
+                    font-size: 20px
+                svg
+                    color: #f3683e
+            &:nth-child(2)
+                align-items: center
+                display: flex
+                span
+                    margin-right: 5px
+                    font-size: 20px
+                svg
+                    color: #31af36                  
+.callback-btn
+    flex: 1 1 calc(15% - 20px)
+    margin: 0 10px
+    button
+        width: 50px
+        height: 50px
+        border-radius: 25px
+        cursor: pointer
+        border: 0
+        outline: none
+        transition: .4s
+        svg
+            font-size: 20px
+
+                

@@ -1,15 +1,12 @@
-import { HeaderBlock } from './components';
-
+/* eslint-disable react/react-in-jsx-scope */
+import {HeaderBlock, Content} from './components/user';
 
 function App() {
 	return (
+		// eslint-disable-next-line react/react-in-jsx-scope
 		<div className="App">
-			< HeaderBlock 
-				phone="asd" 
-				banner="asd" 
-				logotype="/logo.png" 
-				address= "ПОЗНЯКИ | ХАРЬКОВСКИЙ"
-			/>
+			<HeaderBlock />
+			<Content />
 		</div>
 	);
 }

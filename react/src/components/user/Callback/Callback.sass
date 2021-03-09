@@ -1,0 +1,57 @@
+.callback-overlay
+    display: none
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0, 0, 0, .7);
+    width: 100%
+    height: 100%
+    z-index: 1000
+    .callback-wrapper
+        width: 400px
+        height: 400px
+        background: #f1fafe
+        border-radius: 5px
+        position: relative
+        .callback-wrapper__close
+            position: absolute
+            width: 36px
+            height: 36px
+            border-radius: 18px
+            color: white
+            top: -18px
+            right: -18px
+            font-size: 20px
+        form
+            width: 100%
+            height: 100%
+            flex-direction: column
+            p
+                color: black
+                margin: 25px 0
+                font-size: 28px
+            span
+                color: black
+                padding: 0 30px
+            .callback-wrapper__input
+                width: 80%
+                margin: 25px 0
+                .MuiFormControl-root
+                    width: 100%
+            .callback-wrapper__button
+                margin: 25px 0
+                button
+                    padding: 10px 80px
+                    font-size: 14px
+                    border-radius: 3px
+                    cursor: pointer
+        .callback-aler__success
+            color: #31af36
+        .callback-aler__error
+            color: #f3683e    
+.callback-active
+    display: flex
